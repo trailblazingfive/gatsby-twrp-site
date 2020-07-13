@@ -16,7 +16,7 @@
   grid-template: 
                   "TopBarArea TopBarArea" 100px
                   "MainMenuArea ContentArea" auto
-                  "MainMenuArea FooterArea" 100px / 300px 1fr;
+                  "FooterArea FooterArea" 100px / 300px 1fr;
   margin: 0px;
   overflow: hidden;
 }
