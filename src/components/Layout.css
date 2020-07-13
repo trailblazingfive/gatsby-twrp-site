@@ -1,0 +1,30 @@
+@font-face{
+  font-family: Anton;
+  src: url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+}
+
+*{
+  font: 15px/21px 'Anton', sans-serif;
+  height: auto;
+  background: #cedfea;
+  margin: 0;
+  padding: 0;
+}
+
+.Layout {
+  display: grid;
+  grid-template: 
+                  "TopBarArea TopBarArea" 100px
+                  "MainMenuArea ContentArea" auto
+                  "MainMenuArea FooterArea" 100px / 300px 1fr;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.random{
+  color: #ed98db;
+  color: #cedfea;
+  color: #375e96;
+  color: #eef5fb;
+  color: #5d82b8;
+}
