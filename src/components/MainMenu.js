@@ -15,10 +15,6 @@ const MainMenu = () => {
       <MenuButton name={"Listen now"}/>
       <MenuButton name={"Bandcamp"}/>
       <MenuButton name={"Merch"}/>
-      <MenuButton name={"Bandcamp"}/>
-      <MenuButton name={"Bandcamp"}/>
-      <MenuButton name={"Bandcamp"}/>
-
     </MainMenuArea>
   );
 }
