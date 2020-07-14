@@ -45,7 +45,7 @@ const LargeAlbum = (props) => {
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 900) {
+            fluid(sizes:"90") {
               originalName
               ...GatsbyImageSharpFluid
             }
