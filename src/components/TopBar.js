@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 import MainMenu from "./MainMenu"
@@ -26,9 +27,9 @@ const TopBar = () => {
 
   return (
     <TopBarArea>
-      <a href="/">
+      <Link href="/">
         <BandName>TWRP</BandName>
-      </a>
+      </Link>
       <MainMenu/>
     </TopBarArea>
   );
