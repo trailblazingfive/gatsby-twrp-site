@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTwitter, faYoutube, faFacebook, faInstagram, faTwitch } from "@fortawesome/free-brands-svg-icons"
+import { faTwitter, faYoutube, faFacebook, faInstagram, faTwitch, faReddit } from "@fortawesome/free-brands-svg-icons"
 
 const FooterArea = styled.div`
   grid-area: FooterArea;
@@ -74,6 +74,9 @@ const Footer = () => {
         </a>
         <a href="https://www.twitch.tv/thetwrpshow" target="_blank" rel="noopener noreferrer" title="TWRP Twitch">
           <CustomGlyph icon={faTwitch} />
+        </a>
+        <a href="https://www.reddit.com/r/TWRP/" target="_blank" rel="noopener noreferrer" title="TWRP Twitch">
+          <CustomGlyph icon={faReddit} />
         </a>
       </GlyphArea>
       <CopyrightNote>Copyright TWRP {year}<br/><Author>fan made by <CopyrightLink href="https://github.com/trailblazingfive" target="_blank" rel="noopener noreferrer">trailblazingfive {year}</CopyrightLink></Author></CopyrightNote>
