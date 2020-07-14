@@ -1,10 +1,15 @@
 @font-face{
+  font-family: Lato;
+  src: url('../fonts/Lato-Regular.ttf')
+}
+
+@font-face{
   font-family: Anton;
-  src: url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  src: url('../fonts/Anton-Regular.ttf')
 }
 
 *{
-  font: 15px/21px 'Anton', sans-serif;
+  font: 15px/21px Lato, sans-serif;
   height: auto;
   background: #cedfea;
   margin: 0;
@@ -14,7 +19,7 @@
 .Layout {
   display: grid;
   grid-template: 
-                  "TopBarArea TopBarArea" 100px
+                  "TopBarArea TopBarArea" auto
                   "MainMenuArea ContentArea" auto
                   "FooterArea FooterArea" auto / 200px 1fr;
   margin: 0px;
