@@ -47,7 +47,7 @@ const LargeAlbum = (props) => {
           childImageSharp {
             fluid(sizes:"90") {
               originalName
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }

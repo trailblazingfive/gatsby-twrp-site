@@ -59,6 +59,8 @@ const AlbumDate = styled.div`
   font-size: 0.7em;
 `
 
+const path = "albums/return-to-wherever.jpg"
+
 const AlbumIcon = (props) => {
   const data = useStaticQuery(graphql`
   query {
@@ -66,9 +68,9 @@ const AlbumIcon = (props) => {
       edges {
         node {
           childImageSharp {
-            fluid(sizes:"90") {
+            fluid(maxWidth: 900) {
               originalName
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
