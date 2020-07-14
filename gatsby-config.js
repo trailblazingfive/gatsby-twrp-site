@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/gatsby-twrp-site",
   siteMetadata: {
     title: `TWRP`,
     description: `TWRP Band Homepage`,
