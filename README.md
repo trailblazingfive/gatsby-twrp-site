@@ -1,15 +1,14 @@
 # TWRP fan made site made using Gatsby
 
 <p align="center">
-  <img width="70%" src="gatsby-twrp-site.jpeg"/>
+  <img width="70%" src="gatsby-twrp-site.jpg"/>
 </p>
 
 TWRP aka an elite squad of Rock Start from the future! [Would you like to know more?](https://www.reddit.com/r/TWRP/wiki/lore)
 
-<p align="center">
-  [Live preview](https://trailblazingfive.github.io/gatsby-twrp-site/)
-</p>
-
+<h2 align="center">
+  <a href="https://trailblazingfive.github.io/gatsby-twrp-site/" title="gatsby-twrp-site">Live preview</a>
+</h2>
 
 ## How to use?
 
@@ -25,5 +24,5 @@ Run `gatsby clean` puring the `.cache` followed by `gatsby serve` - default port
 
 ## Technology solutions
 
-Gatsby.js (React.js + GraphQL) + styled-components
+`Gatsby.js` (`React.js` + `GraphQL`) + `styled-components`
 
