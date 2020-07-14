@@ -3,12 +3,15 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/Layout"
-import Image from "../components/image"
+import LargeAlbum from "../components/elements/LargeAlbum"
 import SEO from "../components/seo"
+
 
 const Capsule = styled.div`
   color: #375e96;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   > p {
     color: red;
   }
@@ -19,15 +22,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Capsule>
-      <h1>New album and new tour dates</h1>
-      {/* <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p> */}
-      <a href="https://twitter.com/TWRPband" target="_blank" rel="noopener noreferrer" title="Follow us!">
-      <div style={{ maxWidth: `500px`, margin: `1em` }}>
-        <Image />
-      </div>
-      </a>
-      {/* <Link to="/albums/">Our albums</Link> <br /> */}
+      <LargeAlbum 
+      albumName={"Return to Wherever"} 
+      albumCover={"return-to-wherever.jpg"}
+      link={"https://twrp.bandcamp.com/"}
+      title={"Check out our latest album!"}
+      />
     </Capsule>
   </Layout>
 )
