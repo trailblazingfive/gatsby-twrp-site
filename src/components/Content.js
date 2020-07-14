@@ -3,8 +3,8 @@ import styled from "styled-components"
 
 const ContentArea = styled.div`
   grid-area: ContentArea;
-  background: lime;
   min-height: 300px;
+  padding: 30px;
 `
 
 const Content = ({ props, children }) => {
