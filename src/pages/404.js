@@ -1,13 +1,31 @@
 import React from "react"
+import styled from "styled-components"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 
+const Notice = styled.div`
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: 500;
+  background: #ed98db;
+  user-select: none;
+  font-family: 'Anton';
+  color: #eef5fb;
+  padding: 10px;
+  text-align: center;
+  &:hover{
+    transform: skewX(-10deg) scale(1.1)
+  }
+  @media (max-width:899px){
+    font-size: 10vw;
+  }
+`
+
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Notice>404: Page not found, we are sorry!</Notice>
   </Layout>
 )
 

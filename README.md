@@ -17,4 +17,3 @@ Gatsby.js (React.js + GraphQL) + styled-components
 * Custom 404
 * Refactoring + code formating
 * Check all @media quaries
-* Archive old website

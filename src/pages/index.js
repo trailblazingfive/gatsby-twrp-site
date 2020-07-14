@@ -29,6 +29,7 @@ const Notice = styled.div`
   font-family: 'Anton';
   color: #eef5fb;
   padding: 10px;
+  text-align: center;
   &:hover{
     transform: skewX(-10deg) scale(1.1)
   }
