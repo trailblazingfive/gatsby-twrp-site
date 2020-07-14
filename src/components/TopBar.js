@@ -3,14 +3,25 @@ import styled from "styled-components"
 
 const TopBarArea = styled.div`
   grid-area: TopBarArea;
-  background: blue;
+  text-align: center;
+  padding: 60px;
+  background: #ed98db;
+  color: #eef5fb;
 `
 
-const TopBar = ({ props, children }) => {
+const BandName = styled.h1`
+  font-size: 7em;
+  font-weight: 500;
+  background: #ed98db;
+  user-select: none;
+  font-family: 'Anton';
+`
+
+const TopBar = () => {
 
   return (
     <TopBarArea>
-      Top Bar
+      <BandName>TWRP</BandName>
     </TopBarArea>
   );
 }
