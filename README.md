@@ -20,7 +20,7 @@ Modify `pathPrefix` in `gatsby-config` and run `gatsby build` then upload to you
 
 ### Images don't load?
 
-Run `gatsby clean` puring the `.cache` followed by `gatsby serve` - default port `http://localhost:9000/`.
+Run `gatsby clean` purging the `.cache` followed by `gatsby serve` - default port `http://localhost:9000/`.
 
 ## Technology solutions
 
