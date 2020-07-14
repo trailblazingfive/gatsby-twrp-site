@@ -9,6 +9,7 @@ const MButton = styled.div`
   text-align: center;
   color: #eef5fb;
   font-size: 1.3em;
+  user-select: none;
   &:hover{
     text-decoration: underline;
   }

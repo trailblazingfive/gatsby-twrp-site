@@ -5,7 +5,6 @@ import MenuButton from "./elements/MenuButton"
 
 const MainMenuArea = styled.div`
   grid-area: MainMenuArea;
-  background: red;
 `
 
 const MainMenu = () => {
