@@ -6,21 +6,26 @@ const MButton = styled.div`
   padding: 10px;
   margin: 10px;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   color: #eef5fb;
   font-size: 1.3em;
   user-select: none;
+  transform: skewX(-3deg);
   &:hover{
     text-decoration: underline;
+    text-align:center;
+    font-weight: 800;
   }
 `
 
 const MenuButton = (props) => {
 
   return (
-    <MButton>
-      {props.name}
-    </MButton>
+    <a href={props.target} target="_blank" rel="noopener noreferrer" title={props.title}>
+      <MButton>
+        {props.name}
+      </MButton>
+    </a>
   );
 }
 

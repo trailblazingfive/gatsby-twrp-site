@@ -11,9 +11,10 @@ const MainMenu = () => {
 
   return (
     <MainMenuArea>
-      <MenuButton name={"Listen now"}/>
-      <MenuButton name={"Bandcamp"}/>
-      <MenuButton name={"Merch"}/>
+      <MenuButton name={"Listen now"} target={"https://lnk.to/TWRP"} title={"Listen now to TWRP"}/>
+      <MenuButton name={"Bandcamp"} target={"https://twrp.bandcamp.com/"} title={"Get TWRP music"}/>
+      <MenuButton name={"Merch"} target={"https://twrp.store-08.com/featured/"} title={"Checkout TWRP merch"}/>
+      {/* <MenuButton name={""} target={""} title={""}/> */}
     </MainMenuArea>
   );
 }
