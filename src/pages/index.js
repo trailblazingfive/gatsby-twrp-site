@@ -17,16 +17,47 @@ const Capsule = styled.div`
   }
 `
 
+const NoticeLink = styled.a`
+  font-family: 'Anton';
+  color: #eef5fb;
+  padding: 10px;
+
+`
+
+const Notice = styled.div`
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: 500;
+  background: #ed98db;
+  user-select: none;
+  font-family: 'Anton';
+  color: #eef5fb;
+  padding: 10px;
+  &:hover{
+    transform: skewX(-10deg) scale(1.1)
+  }
+`
+
+let noticeLink = "https://www.twitch.tv/thetwrpshow/"
+let noticeText = "Tune in The TWRP Show!"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Capsule>
-      <LargeAlbum 
-      albumName={"Return to Wherever"} 
-      albumCover={"return-to-wherever.jpg"}
-      link={"https://twrp.bandcamp.com/"}
-      title={"Check out our latest album!"}
+      <NoticeLink href={noticeLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Notice>
+          {noticeText}
+        </Notice>
+      </NoticeLink>
+      <LargeAlbum
+        albumName={"Return to Wherever"}
+        albumCover={"return-to-wherever.jpg"}
+        link={"https://twrp.bandcamp.com/"}
+        title={"Check out our latest album!"}
       />
     </Capsule>
   </Layout>
