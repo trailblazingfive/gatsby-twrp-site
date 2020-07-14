@@ -46,6 +46,10 @@ const CopyrightLink = styled.a`
   }
 `
 
+const Author = styled.p`
+  font-size: 0.8em;
+`
+
 const Footer = () => {
   const year = new Date().getFullYear()
 
@@ -68,7 +72,7 @@ const Footer = () => {
           <CustomGlyph icon={faTwitch} />
         </a>
       </GlyphArea>
-      <CopyrightNote>Copyright TWRP {year} fan made by <CopyrightLink href="https://github.com/trailblazingfive" target="_blank" rel="noopener noreferrer">trailblazingfive {year}</CopyrightLink></CopyrightNote>
+      <CopyrightNote>Copyright TWRP {year}<br/><Author>fan made by <CopyrightLink href="https://github.com/trailblazingfive" target="_blank" rel="noopener noreferrer">trailblazingfive {year}</CopyrightLink></Author></CopyrightNote>
     </FooterArea>
   );
 }

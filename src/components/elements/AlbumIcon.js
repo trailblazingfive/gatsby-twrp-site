@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from "styled-components"
+import { useStaticQuery, graphql } from "gatsby"
 
-const MButton = styled.div`
+const AlbumContainer = styled.div`
   background: #375e96;
   padding: 10px 30px 10px 30px;
   margin: 10px;
@@ -19,18 +20,17 @@ const MButton = styled.div`
   }
 `
 
-const MenuButton = (props) => {
+const AlbumIcon = (props) => {
 
   return (
-    
-      <a href={props.target} target="_blank" rel="noopener noreferrer" title={props.title}>
-        <MButton>
+    <a href={props.target} target="_blank" rel="noopener noreferrer" title={props.title}>
+      <AlbumContainer>
+        <img></img>
         {props.name}
-        </MButton>
-      </a>
-
+      </AlbumContainer>
+    </a>
   );
 }
 
-export default MenuButton;
+export default AlbumIcon;
 

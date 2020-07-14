@@ -4,7 +4,11 @@ import styled from "styled-components"
 import MenuButton from "./elements/MenuButton"
 
 const MainMenuArea = styled.div`
-  grid-area: MainMenuArea;
+  margin-top: 20px;
+  background: #ed98db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 const MainMenu = () => {
