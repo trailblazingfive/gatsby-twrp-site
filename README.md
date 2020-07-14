@@ -2,7 +2,7 @@
 
 TWRP aka an elite squad of Rock Start from the future! [Would you like to know more?](https://www.reddit.com/r/TWRP/wiki/lore)
 
-[Gatsby-TWRP](https://trailblazingfive.github.io/gatsby-twrp-site/)
+Visit [Gatsby-TWRP](https://trailblazingfive.github.io/gatsby-twrp-site/)
 
 ## How to use?
 
@@ -17,3 +17,4 @@ Gatsby.js (React.js + GraphQL) + styled-components
 * Custom 404
 * Refactoring + code formating
 * Check all @media quaries
+* Archive old website

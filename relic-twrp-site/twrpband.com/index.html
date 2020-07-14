@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TWRP</title>
+    <meta name="description" content="TWRP - Return to Wherever Tour">
+    <meta property="og:title" content="TWRP">
+    <meta property="og:description" content="TWRP - Return to Wherever Tour">
+    <meta property="og:url" content="http://twrpband.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://twrpband.com/img/share.png">
+    <link rel="shortcut icon" href="img/icon.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta name="twitter:title" content="TWRP">
+    <meta name="twitter:description" content="TWRP - Return to Wherever Tour">
+    <meta name="twitter:image" content="http://twrpband.com/img/share.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      html,
+      body {
+        background-color: #EEF5FC;
+      }
+
+      body {
+        font-weight: 600;
+        color: #131313;
+        font-size: 23px;
+        margin: 0;
+        font-family: "Futura", sans-serif;
+      }
+
+      .wrapper {
+        max-width: 682px;
+        margin: 0 auto;
+        padding: 0 10px;
+      }
+
+      .logo-wrapper::after {
+        clear: both;
+        content: "";
+        display: block
+      }
+
+      .logo-wrapper {
+        max-width: 345px;
+        margin: 30px auto 15px auto;
+        display: block;
+      }
+
+      .logo-wrapper img {
+        width: 100%;
+        float: left;
+        margin-bottom: 2px;
+      }
+
+      h2 {
+        font-family: impact;
+        text-transform: uppercase;
+        font-size: 28px;
+        margin: 0;
+        font-weight: 400;
+        border-bottom: 4px solid #131313;
+        padding: 4px 0;
+        line-height: 1.2;
+      }
+
+      .title-row {
+        border-bottom: 4px solid #131313;
+        padding: 4px 0;
+        margin: 0;
+      }
+
+      h2 .mini-title {
+        font-size: 23px;
+        display: block;
+        letter-spacing: 0.2px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .event-dates li {
+        display: block;
+        padding: 0;
+        margin: 25px 0 35px 0;
+        text-transform: uppercase;
+        //background: url(img/line.svg) left 50% bottom 5px no-repeat;
+      }
+
+      .event-dates li::after {
+        clear: both;
+        content: "";
+        display: block
+      }
+
+      .month,
+      .day,
+      .venue-col {
+        float: left;
+        font-size: 23px;
+        line-height: 1.1;
+      }
+
+      .ticket-col {
+        float: right;
+        font-size: 23px;
+        line-height: 1.1;
+      }
+
+      .month {
+        width: 10%;
+        min-width: 70px;
+      }
+
+      .time-col {
+        background: #EEF5FC;
+        height: 49px;
+        float: left;
+      }
+
+      .day {
+        width: 8%;
+        min-width: 50px;
+      }
+
+      .venue-col h3,
+      .venue-col p {
+        line-height: 1.1;
+        margin: 0;
+        font-size: 23px;
+      }
+
+      .venue-col p {
+        color: #5E6778;
+        font-size: 17px;
+        margin-top: 4px;
+        display: inline-block;
+        padding-right: 8px;
+        background-color: #EEF5FC;
+      }
+
+      .button {
+-webkit-appearance: none; 
+        appearance: none;
+        display: block;
+        font-family: "Futura";
+        font-size: 23px;
+        color: #EEF5FC;
+        letter-spacing: 0.07px;
+        text-align: center;
+        background: #131313;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 12px 14px;
+        margin-top: -5px;
+        box-shadow: 0 0 0 0 #ACBCD6;
+        transition: all 0.25s ease;
+      }
+
+      .sold-out {
+-webkit-appearance: none; 
+appearance: none;
+display: block;
+font-family: "Futura";
+font-size: 19px;
+color: #5E6778;
+background-color: #DDE6F2;
+letter-spacing: 0.07px;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+padding: 16px 14px;
+margin-top: -5px;
+margin-bottom: 0;
+
+      }
+
+      .button:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 6px 6px 0 0 #ACBCD6;
+      }
+
+      .copyright {
+        text-align: center;
+        color: #5E6778;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin: 20px 0
+      }
+
+      .site-footer {
+        margin-bottom: 40px
+      }
+
+      .site-footer ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center
+      }
+
+      .site-header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center
+      }
+
+      .inline-link {
+        color: #1E55C4;
+        display: block;
+        padding: 7px 0px 2px 0;
+        text-decoration: none;
+        border-bottom: 3px solid #1E55C4;
+        transition: all 0.25s ease;
+      }
+
+      .inline-link:hover {
+        color: #022E86;
+        border-bottom-color: #022E86;
+      }
+
+      .site-header {
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+        top: 0
+      }
+
+      .site-menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        display: inline-block;
+        padding: 12px 60px 12px 15px;
+        z-index: 1002;
+        text-transform: uppercase;
+        color: #fff;
+        background: #111111 url(http://twrpband.com/images/menu.png) 85px 15px no-repeat;
+        background-size: 28px 21px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+      }
+
+      .text-link {
+        margin: 10px 0
+      }
+
+      .site-header .text-link a {
+        font-size: 15px;
+        color: #EEF5FC;
+        display: inline-block;
+        padding: 5px;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        width: 100%
+      }
+
+      .icon-link {
+        display: inline-block;
+        margin: 10px
+      }
+
+      .icon-link a {
+        text-indent: -1000px;
+        overflow: hidden;
+        width: 46px;
+        height: 46px;
+        display: inline-block;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 0 0 #ACBCD6;
+        transition: all 0.25s ease;
+      }
+
+      .icon-link a:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 6px 6px 0 0 #ACBCD6;
+      }
+
+      .icon-link a.facebook-link {
+        background-image: url(img/facebook.svg)
+      }
+
+      .icon-link a.twitter-link {
+        background-image: url(img/twitter.svg)
+      }
+
+      .icon-link a.youtube-link {
+        background-image: url(img/youtube.svg)
+      }
+
+      @media screen and (max-width:719px) {
+        .site-footer {
+          border-top: 4px solid #131313;
+          padding-top: 12px;
+        }
+
+        .header {
+          z-index: 1000;
+          text-align: Center;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          left: 0;
+          height: 0;
+
+        }
+
+        .header ul {
+          transform: translateY(-100%);
+          transition: All 0.5s ease;
+        }
+
+        .header.open ul {
+          transform: translateY(0%)
+        }
+
+        .header ul {
+          padding: 22px 22px 10px 22px;
+          background: #5E6778;
+
+        }
+
+        .header .text-link {
+          margin: 25px 0;
+        }
+
+        .menu-toggle {
+          z-index: 1000;
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 50px;
+          height: 50px;
+          background: #131313 url(img/menu-icon.svg) center center no-repeat;
+          overflow: hidden;
+          text-indent: -1000px;
+
+        }
+
+        body {
+          padding-top: 10px;
+        }
+      }
+
+      @media screen and (max-width:320px) {
+        body {
+          padding-top: 30px;
+        }
+      }
+
+      @media screen and (min-width:720px) {
+        .menu-toggle {
+          display: none;
+        }
+
+        .site-footer {
+          margin: 80px 0 40px
+        }
+
+        .site-footer ul li {
+          display: inline-block;
+          vertical-align: middle
+        }
+
+
+
+        .header {
+          margin: 20px auto 40px auto;
+          text-align: center;
+        }
+
+        .header ul li {
+          display: inline-block;
+          vertical-align: middle
+        }
+
+        .site-header ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          text-align: left
+        }
+
+        .site-header ul li {
+          display: inline-block;
+          vertical-align: middle
+        }
+
+        .site-header ul a {
+          transition: transform .25s ease
+        }
+
+        .site-header ul a:hover {
+          transform: scale(1.1)
+        }
+
+        .site-menu {
+          display: none
+        }
+
+        .mobile {
+          display: none !important
+        }
+
+        .site-header {
+          background: #111111;
+          margin: 0 auto
+        }
+
+        .site-header ul {
+          float: left
+        }
+
+        .site-header .text-link {
+          float: right;
+          margin-right: 10px
+        }
+
+        .icon-link {
+          margin: 0 5px
+        }
+
+        .icon-link a {
+          width: 46px;
+          height: 46px;
+        }
+
+        .icon-link:nth-child(3) {
+          margin-right: 20px;
+        }
+
+        .text-link {
+          margin: 0
+        }
+
+        .text-link a {
+          padding: 10px 15px;
+          font-size: 19px;
+          margin-top: 0px;
+        }
+      }
+
+      #logo {
+        margin: 15px 0 6px 0;
+      }
+
+      .available {
+        margin: 0px auto 50px auto;
+        display: block;
+        max-width: 345px;
+      }
+
+      @media screen and (max-width:719px) {
+        body {
+          font-size: 19px;
+        }
+
+        .venue-col h3,
+        .venue-col p,
+        .month,
+        .day,
+        .venue-col {
+          font-size: 19px;
+        }
+
+        .site-header {
+          transform: translateY(-105%);
+          border-radius: 0 0 18px 18px;
+          transition: all .75s ease-in-out;
+          background: #F6E9F7;
+          padding: 80px 20px 10px;
+          box-shadow: 0 5px 7px 0 rgba(0, 0, 0, .17)
+        }
+
+        .site-header.open {
+          opacity: 1;
+          transform: translateY(0%)
+        }
+
+        .site-header ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          text-align: center
+        }
+
+        .site-header .icon-link a.facebook-link {
+          background-image: url(http://twrpband.com/images/facebook-link-dark.png)
+        }
+
+        .site-header .icon-link a.twitter-link {
+          background-image: url(http://twrpband.com/images/twitter-link-dark.png)
+        }
+
+        .site-header .icon-link a.youtube-link {
+          background-image: url(http://twrpband.com/images/youtube-link-dark.png)
+        }
+
+        .site-header .text-link a {
+          background: #1E191C
+        }
+      }
+
+      @media screen and (max-width:719px) {
+        .wrapper {
+          max-width: 560px;
+        }
+
+        .logo-wrapper {
+          max-width: 245px;
+          margin: 25px auto 10px auto;
+        }
+
+      }
+
+      @media screen and (max-width:620px) {
+        .wrapper {
+          max-width: 400px;
+          padding: 0 20px;
+        }
+
+        .ticket-col {
+          display: block;
+          width: 100%;
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+
+        .time-col {
+          width: 72px;
+        }
+
+        .month {
+          width: 100%;
+        }
+
+        .event-dates li {
+          background: none;
+        }
+
+        .button {
+          width: 100%;
+        }
+      }
+
+      .hidden {
+        font-size: 0;
+        opacity: 0;
+      }
+
+      @media screen and (max-width:325px) {
+        body {
+          font-size: 17px;
+        }
+
+        .venue-col h3,
+        .month,
+        .day,
+        .venue-col {
+          font-size: 17px;
+        }
+
+        .venue-col p {
+          font-size: 15px;
+        }
+
+        .time-col {
+          width: 58px;
+        }
+      }
+
+      .note {
+        margin: 10px 0 0 0;
+        text-transform: uppercase;
+        font-size: 23px;
+      }
+@media screen and (max-width:325px) {
+
+.note{
+font-size:19px;
+}
+}
+p span{
+display: block;
+font-size: 15px;
+margin-top: 8px;
+}
+    </style>
+  </head>
+
+  <body>
+    <header id="menu" class="header">
+      <ul>
+        <li class="icon-link">
+          <a href="https://www.facebook.com/twrpband" target="_blank" class="facebook-link">Facebook</a>
+        </li>
+        <li class="icon-link">
+          <a href="https://twitter.com/TWRPband" target="_blank" class="twitter-link">Twitter</a>
+        </li>
+        <li class="icon-link">
+          <a href="https://youtube.com/TWRPtube" target="_blank" class="youtube-link">Youtube</a>
+        </li>
+        <li class="text-link">
+          <a href="https://twrp.bandcamp.com" target="_blank" class="button">Bandcamp</a>
+        </li>
+        <li class="text-link">
+          <a href="https://twrp.store-08.com/featured/" target="_blank" class="button">Merch</a>
+        </li>
+      </ul>
+      <a class="menu-toggle" id="toggle">Menu</a>
+    </header>
+    <div class="wrapper">
+      <div class="logo-wrapper">
+        <img src="img/title.svg" alt="NEW TOUR DATES" id="logo">
+        <img src="img/album-cover.png" alt="TWRP - Return to Wherever Tour" title="TWRP - Return to Wherever Tour">
+      </div>
+      <a href="http://lnk.to/TWRP" class="button available" target="_blank">Available now</a>
+      <!--<ul class="event-dates">
+
+                <li class="event-row row">
+                    <div class="time-col">
+                        <time><span class="month">Mar</span><span class="day">7</span></time></div>
+                    <div class="venue-col">
+                        <h3>Gainesville</h3>
+                        <p>Hi Dive <span>with The Protomen</span></p>
+                    </div>
+                    <div class="ticket-col">
+                        <a href="https://www.eventbrite.com/e/twrp-and-protomen-tickets-86450428559" class="button" target="_blank">Tickets</a>
+                    </div>
+                </li>
+                <li class="event-row row">
+                    <div class="time-col">
+                        <time><span class="month">Mar</span><span class="day">8</span></time></div>
+                    <div class="venue-col">
+                        <h3>Tampa</h3>
+                        <p>Crowbar <span>with The Protomen</span></p>
+                    </div>
+                    <div class="ticket-col">
+                        <a href="https://www.eventbrite.com/e/twrp-and-protomen-tickets-86451096557" class="button" target="_blank">Tickets</a>
+                    </div>
+                </li>
+            </ul>-->
+     
+      <footer class="site-footer">
+        <p class="copyright">© 2020 TWRP</p>
+      </footer>
+    </div>
+    <script type="text/javascript">
+      function a() {
+        document.querySelector('#menu').classList.toggle('open');
+      }
+      document.querySelector('#toggle').addEventListener('click', a)
+    </script>
+  </body>
+
+</html>
