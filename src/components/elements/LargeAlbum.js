@@ -26,6 +26,16 @@ const Container = styled.div`
     padding: 15px;
     margin: 5px;
   }
+  @media (max-width:899px){
+    width: 70vw;
+    margin: 0 auto;
+    &:hover{
+      background: #ed98db;
+      margin: 0 auto;
+      padding: 10px;
+    }
+  }
+  
 `
 
 const LargeAlbum = (props) => {

@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 import Layout from "../components/Layout"
 import LargeAlbum from "../components/elements/LargeAlbum"
-import SEO from "../components/seo"
+import SEO from "../components/Seo"
 
 
 const Capsule = styled.div`
@@ -12,9 +12,6 @@ const Capsule = styled.div`
   text-align: center;
   align-items: center;
   justify-content: center;
-  > p {
-    color: red;
-  }
 `
 
 const NoticeLink = styled.a`
@@ -35,6 +32,9 @@ const Notice = styled.div`
   padding: 10px;
   &:hover{
     transform: skewX(-10deg) scale(1.1)
+  }
+  @media (max-width:899px){
+    font-size: 10vw;
   }
 `
 

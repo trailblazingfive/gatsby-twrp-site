@@ -9,6 +9,9 @@ const MainMenuArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width:899px){
+    flex-direction: row;
+  }
 `
 
 const MainMenu = () => {

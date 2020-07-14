@@ -26,6 +26,9 @@ const CustomGlyph = styled(FontAwesomeIcon)`
     transform: scale(1.1);
     border-radius: 5px;
   }
+  @media (max-width:899px){
+    font-size: 10vw;
+  }
 `
 
 const CopyrightNote = styled.div`

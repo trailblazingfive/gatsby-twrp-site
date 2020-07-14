@@ -2,12 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-
 import AlbumIcon from "../components/elements/AlbumIcon"
-
-
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import SEO from "../components/Seo"
 
 const AlbumGrid = styled.div`
   display: flex;

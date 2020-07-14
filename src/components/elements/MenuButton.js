@@ -17,6 +17,11 @@ const MButton = styled.div`
     background: #eef5fb;
     color: #375e96;
   }
+  @media (max-width:899px){
+    font-size: 0.5em;
+    padding: 5px 10px 5px 10px;
+    margin: 1vw;
+  }
 `
 
 const MenuButton = (props) => {
