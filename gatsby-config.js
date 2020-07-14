@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `TWRP`,
     description: `TWRP Band Homepage`,
-    author: `@trailblazingfive`,
+    author: `TWRP`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
