@@ -22,12 +22,15 @@ const MButton = styled.div`
 const MenuButton = (props) => {
 
   return (
-    
-      <a href={props.target} target="_blank" rel="noopener noreferrer" title={props.title}>
-        <MButton>
+
+    <a href={props.target}
+      target={(props.newTab) ? "_blank" : ""}
+      rel="noopener noreferrer"
+      title={props.title}>
+      <MButton>
         {props.name}
-        </MButton>
-      </a>
+      </MButton>
+    </a>
 
   );
 }
