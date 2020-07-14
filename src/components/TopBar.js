@@ -27,7 +27,7 @@ const TopBar = () => {
 
   return (
     <TopBarArea>
-      <Link href="/">
+      <Link href="/index">
         <BandName>TWRP</BandName>
       </Link>
       <MainMenu/>
