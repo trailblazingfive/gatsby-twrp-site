@@ -35,6 +35,7 @@ const CopyrightNote = styled.div`
   margin: 5px;
   padding: 10px;
   height: 100%;
+  user-select: none;
 `
 
 const CopyrightLink = styled.a`
