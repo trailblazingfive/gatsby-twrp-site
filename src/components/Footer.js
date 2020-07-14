@@ -75,7 +75,7 @@ const Footer = () => {
         <a href="https://www.twitch.tv/thetwrpshow" target="_blank" rel="noopener noreferrer" title="TWRP Twitch">
           <CustomGlyph icon={faTwitch} />
         </a>
-        <a href="https://www.reddit.com/r/TWRP/" target="_blank" rel="noopener noreferrer" title="TWRP Twitch">
+        <a href="https://www.reddit.com/r/TWRP/" target="_blank" rel="noopener noreferrer" title="reddit r/TWRP">
           <CustomGlyph icon={faReddit} />
         </a>
       </GlyphArea>
