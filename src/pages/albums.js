@@ -19,6 +19,12 @@ const Albums = () => (
     <SEO title="Albums" />
     <AlbumGrid>
       <AlbumIcon
+        storeLink={"https://twrp.bandcamp.com/album/over-the-top"}
+        albumName={"Over The Top"}
+        albumCover={"over-the-top.jpg"}
+        albumDate={"Sep 2020"}
+      />
+      <AlbumIcon
         storeLink={"https://twrp.bandcamp.com/album/return-to-wherever"}
         albumName={"Return to Wherever"}
         albumCover={"return-to-wherever.jpg"}
