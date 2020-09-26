@@ -55,7 +55,7 @@ const IndexPage = () => (
       </NoticeLink>
       <LargeAlbum
         albumName={"Over The Top"}
-        albumCover={"over-the-top.jpg"}
+        albumCover={'over-the-top.jpg'}
         link={"https://twrp.bandcamp.com/"}
         title={"Check out our latest album!"}
       />
