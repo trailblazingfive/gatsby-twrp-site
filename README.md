@@ -1,7 +1,7 @@
 # TWRP fan made site made using Gatsby
 
 <p align="center">
-  <img width="70%" src="gatsby-twrp-site.jpg"/>
+  <img width="70%" src="gatsby-twrp-site.png"/>
 </p>
 
 TWRP aka an elite squad of Rock Start from the future! [Would you like to know more?](https://www.reddit.com/r/TWRP/wiki/lore)
