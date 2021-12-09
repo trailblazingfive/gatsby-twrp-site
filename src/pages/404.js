@@ -3,15 +3,16 @@ import styled from "styled-components"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
+import { GLOBAL_COLOURS } from "../shared/theming"
 
 const Notice = styled.div`
   font-size: 3em;
   line-height: 1em;
   font-weight: 500;
-  background: #ed98db;
+  background: ${GLOBAL_COLOURS.BACKGROUND_SECONDARY};
   user-select: none;
   font-family: 'Anton';
-  color: #eef5fb;
+  color: ${GLOBAL_COLOURS.TEXT_MAIN};
   padding: 10px;
   text-align: center;
   &:hover{

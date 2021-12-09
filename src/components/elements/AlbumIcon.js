@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
+import { GLOBAL_COLOURS } from "../../shared/theming";
 
 
 /*
@@ -18,19 +19,19 @@ import styled from "styled-components"
 const Container = styled.a`
   width: 300px;
   margin: 10px;
-  background: #eef5fb;
+  background: ${GLOBAL_COLOURS.TEXT_MAIN};
   padding: 10px;
   border-radius: 5px;
   &:hover{
-    background: #ed98db;
+    background: ${GLOBAL_COLOURS.BACKGROUND_SECONDARY};
     padding: 15px;
     margin: 5px;
   }
 `
 const Album = styled.div`
   text-align: center;
-  background: #ed98db;
-  color: #eef5fb;
+  background: ${GLOBAL_COLOURS.BACKGROUND_SECONDARY};
+  color: ${GLOBAL_COLOURS.TEXT_MAIN};
   padding: 10px;
   font-family: 'Anton';
   user-select: none;
@@ -39,8 +40,8 @@ const Album = styled.div`
 
 const AlbumName = styled.div`
   text-align: center;
-  background: #ed98db;
-  color: #eef5fb;
+  background: ${GLOBAL_COLOURS.BACKGROUND_SECONDARY};
+  color: ${GLOBAL_COLOURS.TEXT_MAIN};
   font-family: 'Anton';
   padding: 0;
   margin: 0;

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import { GLOBAL_COLOURS } from '../../shared/theming';
 
 const MButton = styled.div`
   background: #375e96;
@@ -14,8 +15,8 @@ const MButton = styled.div`
   font-weight: 600;
   :hover{
     text-decoration: underline;
-    background: #eef5fb;
-    color: #375e96;
+    background: ${GLOBAL_COLOURS.TEXT_MAIN};
+    color: ${GLOBAL_COLOURS.BUTTON_MAIN};
   }
   @media (max-width:899px){
     font-size: 0.5em;

@@ -7,11 +7,11 @@
   font-family: Anton;
   src: url('../fonts/Anton-Regular.ttf')
 }
-
+/* CSS colours to change/refactor */
 *{
   font: 17px/25px Lato, sans-serif;
   height: auto;
-  background: #cedfea;
+  background: #cedfea; 
   margin: 0;
   padding: 0;
 }

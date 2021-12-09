@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTwitter, faYoutube, faFacebook, faInstagram, faTwitch, faReddit } from "@fortawesome/free-brands-svg-icons"
+import { GLOBAL_COLOURS } from '../shared/theming';
 
 const FooterArea = styled.div`
   grid-area: FooterArea;
@@ -15,14 +16,14 @@ const GlyphArea = styled.div`
   margin-top: 20px;
 `
 const CustomGlyph = styled(FontAwesomeIcon)`
-  color:#375e96;
+  color:${GLOBAL_COLOURS.BUTTON_MAIN};
   font-size: 3em;
   padding: 5px;
   margin-left: 10px;
   margin-right: 10px;
   &:hover{
-    color: #eef5fb;
-    background: #375e96;
+    color: ${GLOBAL_COLOURS.TEXT_MAIN};
+    background: ${GLOBAL_COLOURS.BUTTON_MAIN};
     transform: scale(1.1);
     border-radius: 5px;
   }
@@ -34,7 +35,7 @@ const CustomGlyph = styled(FontAwesomeIcon)`
 const CopyrightNote = styled.div`
   text-align: center;
   font-size: 0.9em;
-  color:#375e96;
+  color:${GLOBAL_COLOURS.BUTTON_MAIN};
   margin: 5px;
   padding: 10px;
   height: 100%;
@@ -42,11 +43,11 @@ const CopyrightNote = styled.div`
 `
 
 const CopyrightLink = styled.a`
-  color:#375e96;
+  color:${GLOBAL_COLOURS.BUTTON_MAIN};
   text-decoration: underline;
   font-size: 1em;
   &:hover{
-    color: #ed98db;
+    color: ${GLOBAL_COLOURS.BACKGROUND_SECONDARY};
   }
 `
 

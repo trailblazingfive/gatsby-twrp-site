@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
+import { GLOBAL_COLOURS } from "../../shared/theming";
 
 
 /*
@@ -18,11 +19,11 @@ import styled from "styled-components"
 const Container = styled.div`
   width: 500px;
   margin: 10px;
-  background: #eef5fb;
+  background: ${GLOBAL_COLOURS.TEXT_MAIN};
   padding: 10px;
   border-radius: 5px;
   &:hover{
-    background: #ed98db;
+    background: ${GLOBAL_COLOURS.BACKGROUND_SECONDARY};
     padding: 15px;
     margin: 5px;
   }
@@ -30,7 +31,7 @@ const Container = styled.div`
     width: 70vw;
     margin: 0 auto;
     &:hover{
-      background: #ed98db;
+      background: ${GLOBAL_COLOURS.BACKGROUND_SECONDARY};
       margin: 0 auto;
       padding: 10px;
     }

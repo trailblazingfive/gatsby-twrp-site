@@ -4,10 +4,11 @@ import styled from "styled-components"
 import Layout from "../components/Layout"
 import LargeAlbum from "../components/elements/LargeAlbum"
 import SEO from "../components/Seo"
+import { GLOBAL_COLOURS } from "../shared/theming"
 
 
 const Capsule = styled.div`
-  color: #375e96;
+  color: ${GLOBAL_COLOURS.BUTTON_MAIN};
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -15,7 +16,7 @@ const Capsule = styled.div`
 
 const NoticeLink = styled.a`
   font-family: 'Anton';
-  color: #eef5fb;
+  color: ${GLOBAL_COLOURS.TEXT_MAIN};
   padding: 10px;
 
 `
@@ -24,10 +25,10 @@ const Notice = styled.div`
   font-size: 3em;
   line-height: 1em;
   font-weight: 500;
-  background: #ed98db;
+  background: ${GLOBAL_COLOURS.BACKGROUND_SECONDARY};
   user-select: none;
   font-family: 'Anton';
-  color: #eef5fb;
+  color: ${GLOBAL_COLOURS.TEXT_MAIN};
   padding: 10px;
   text-align: center;
   &:hover{
