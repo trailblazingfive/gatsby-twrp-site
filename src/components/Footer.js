@@ -70,7 +70,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/twrpband/" target="_blank" rel="noopener noreferrer" title="TWRP Instagram">
           <CustomGlyph icon={faInstagram} />
         </a>
-        <a href="https://www.facebook.com/twrpband/" target="_blank" rel="noopener noreferrer" title="TWRP Facebook">
+        <a href="https://www.facebook.com/twrpband" target="_blank" rel="noopener noreferrer" title="TWRP Facebook">
           <CustomGlyph icon={faFacebook} />
         </a>
         <a href="https://www.twitch.tv/thetwrpshow" target="_blank" rel="noopener noreferrer" title="TWRP Twitch">
