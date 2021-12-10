@@ -3,12 +3,12 @@ import styled from "styled-components"
 import { GLOBAL_COLOURS } from '../../shared/theming';
 
 const MButton = styled.div`
-  background: #375e96;
+  background: ${GLOBAL_COLOURS.BUTTON_MAIN};
   padding: 10px 30px 10px 30px;
   margin: 10px;
   text-transform: uppercase;
   text-align: center;
-  color: #eef5fb;
+  color: ${GLOBAL_COLOURS.TEXT_MAIN};
   font-size: 1.3em;
   user-select: none;
   transform: skewX(-3deg);

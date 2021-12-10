@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { GLOBAL_COLOURS } from '../../shared/theming';
 
 const MButton = styled.div`
-  background: #375e96;
+  background: ${GLOBAL_COLOURS.BUTTON_MAIN};
   padding: 10px 30px 10px 30px;
   margin: 10px;
   text-transform: uppercase;
