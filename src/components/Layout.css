@@ -30,22 +30,3 @@ a{
   margin: 0px;
   overflow: hidden;
 }
-
-.Layout h1 {
-  text-transform: uppercase;
-  background: #ed98db;
-  color: #eef5fb;
-  padding: 10px;
-  font-size: 2em;
-  font-family: 'Anton';
-  user-select: none;
-  margin-top: 0.5em;
-}
-
-.random{
-  color: #ed98db;
-  color: #cedfea;
-  color: #375e96;
-  color: #eef5fb;
-  color: #5d82b8;
-}
