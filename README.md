@@ -4,7 +4,7 @@
   <img width="70%" src="gatsby-twrp-site.jpg"/>
 </p>
 
-TWRP aka an elite squad of Rock Start from the future! [Would you like to know more?](https://www.reddit.com/r/TWRP/wiki/lore)
+TWRP aka an elite squad of rock stars from the future! [Would you like to know more?](https://www.reddit.com/r/TWRP/wiki/lore)
 
 <h2 align="center">
   <a href="https://trailblazingfive.github.io/gatsby-twrp-site/" title="gatsby-twrp-site">Live preview</a>
