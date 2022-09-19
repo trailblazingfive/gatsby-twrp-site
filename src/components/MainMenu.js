@@ -21,9 +21,10 @@ const MainMenu = () => {
 
   return (
     <MainMenuArea>
+      <MenuButton name={"Linktree"} target={"https://linktr.ee/twrpband"} title={"TWRP Linktree"} newTab={true}/>
       <MenuButton name={"Listen now"} target={"https://lnk.to/TWRP"} title={"Listen now to TWRP"} newTab={true}/>
       <MenuButton name={"Bandcamp"} target={"https://twrp.bandcamp.com/"} title={"Get TWRP music"} newTab={true}/>
-      <MenuButton name={"Merch"} target={"https://twrp.store-08.com/featured/"} title={"Checkout TWRP merch"} newTab={true}/>
+      <MenuButton name={"Merch"} target={"https://store.twrpband.com/"} title={"Checkout TWRP merch"} newTab={true}/>
       <MenuButtonInternal name={"Albums"} target={"/albums"} title={"Our albums"} newTab={false}/>
       {/* <MenuButton name={""} target={""} title={""}/> */}
     </MainMenuArea>
